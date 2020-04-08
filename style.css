@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html, body, .container, h1, h2, h3, h4, h5, h6,p, blockquote, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption {
+    margin: 0; padding: 0; border: 0;
+}
+/* div, span, article, section, header, footer, p, ul, label {
+    box-sizing: border-box;
+} */
+*{
+    box-sizing: border-box;
+ 
+}
+div.sidebar {
+background-color: #cccccc;
+padding: 20px;
+}
+ul li.nav-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+    margin: 20px;
+}
+li.nab-item {
+    margin-top: 20px;
+    list-style-type:none;
+    /* font-weight: bold; */
+}
+/* .mainrow {
+    align-items: center;
+} */
+
+/* .nav li a{
+    color:#fff;
+    text-decoration: none;
+}
+.nav li a:hover {
+    font-weight: bold;
+}
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+.nav {
+    padding: 0;
+    margin:0 20px;
+    transition: 0.3s ease;
+  }  */
+
+/* 햄버거아니콘 */
+.menu-icon {
+    position:fixed;
+    top:20px;
+    right:20px;
+    width: 50px;
+    height: 44px;
+    padding: 4px 8px;
+    background-color:#2a70ad;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .menu-icon span {
+      width: 100%;
+      height: 5px;
+      display: block;
+      background: #fff;
+      margin: 6px 0;
+      transition: .5s;
+  }
+  .sidebar {
+    position: fixed;
+    top:0;
+    left:-300px;
+    width: 300px;
+    height: 100vh;
+    background: #fff;
+    transition:.5s;
+    padding: 5px;
+    text-align:left;
+    box-sizing: border-box;
+}
+.sidebar span {
+    font-size: .9em;
+}
+.sidebar.active {
+    left: 0px;
+}
+.sidebar.menu {
+    margin:0;
+    padding: 40px 0;
+}
+.sidebar.menu li {
+    list-style: none;
+    font-family: sans-serif;
+}
+.sidebar.menu li a {
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+.sidebar.menu li a:hover {
+    background: #fc2827;
+    color: #fff;
+}
+/* .menu-icon.active {
+    background: #fc2827;
+} */
+
+  .menu-icon.active span {
+      position: absolute;
+      width: calc(100% - 16px);
+      top:calc(50% - 8px);
+  }
+  .menu-icon.active span:nth-child(1) {
+      transform: rotate(45deg);
+  }
+  .menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.menu-icon.active span:nth-child(2) {
+    display: none;
+}
+/* 햄버거아니콘 끝*/
+
+  /* 햄버거 싸이드바 */
+.sidebar .active{
+    left:-300PX;
+}
+
+/* 싸이드바2 2nd pages */
+/* Style the sidenav links and the dropdown button */
+.sidenav2 a, .dropdown-btn {
+    padding: 3px 8px 3px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav2 a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+   
+  /* Add an active class to the active dropdown button */
+  .active1 {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and 
+  some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 12px;
+  }
+  .dropdown-container a {
+      font-size: 1rem;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+/* 싸이드바2 끝 */
+
+.row::after {
+    content:"";
+    clear: both;
+    display: table;
+    }
+.conMargin {
+    padding:auto;
+    max-width:1400px;
+    margin:auto;
+    height: 85vh;
+   
+} 
+.conFooter {
+    /* height: 5vh; */
+}
+.card-title {
+    font-size: 1.6rem;
+}
+.card-text {
+         font-size: .9rem;
+}
+.col-sm-3 {
+    position: relative;
+}
+.main4 {
+    padding:20px;
+    /* align-items: center; */
+}
+.main4:hover {
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    background-color: rgb(192, 240, 182);
+}
+.menu2 {
+    position: fixed;
+    width: 220px;
+    
+    z-index: 1;
+    top: 0;
+   /* left: 0; */
+    background-color: #111;
+    /* overflow-x: hidden; */
+    padding:10px;
+    height: 85vh; 
+  }
+
+.main2 {
+    top: 0;
+    margin-left: 220px; /* Same as the width of the sidenav */
+    font-size: 1.2rem; 
+    padding:10px;
+    /* height: 85vh;  */
+  
+}
+.mainrow2 {
+    padding: 10px 20px;
+ 
+}
+
+.btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+footer {
+    position: relative;
+  background-color: #fc2827;
+
+    padding:5px;
+    font-size: 0.8rem;
+    text-align: center;
+    /* margin:5px auto; */
+    /* padding-top: 2rem; */
+}
+
+.footer-btn {
+position: relative;
+
+}
+
+/* --hover-width: 70%;
+    --other-width: 30%;
+    --speed: 1000ms; */
+
+
+
+
+/* @media only screen and (max-width: 600px) {
+    
+  } */
+  /* @media only screen and (max-width: 800px) {
+    .footer-btn {
+        display: none; 
+        }
+        .siteaddress {
+            display: none; 
+            }
+  }
+   /* Extra small devices (portrait phones, less than 576px) */
+  /* @media (max-width: 575.98px) { 
+    .card {
+        width: 20rem;
+    }
+   } */
+  
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) { 
+    .card-img-top {
+        width: 100%;
+    }
+    .main4:hover {
+        -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+        box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+        background-color: none;
+    }
+    .card-title {
+        font-size: 1.3rem;
+    }
+    .card-text {
+             font-size: 1.0rem;
+    }
+    .conMargin {
+        height: 100%;
+    }
+    .main4 {
+        padding:10px;
+        /* align-items: center; */
+    }
+    footer {
+        padding:5px;
+        font-size: 0.6rem;
+        text-align: center;
+        margin:5px auto;
+        /* padding-top: 2rem; */
+    }
+    
+    .footer-btn {
+        display: none;
+    }
+     
+ } 
+
+   /* // Medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) { 
+    .card-title {
+        font-size: 1.3rem;
+    }  
+    .card-text {
+        font-size: 1.0rem;
+}
+    .main4 {
+        
+        margin: auto;
+        /* max-width:1000px; */
+    }
+   
+ } 
+  
+   /* Large devices (desktops, less than 1200px) */
+   @media screen and (max-width: 1366px){
+    
+}
+   
+   /* Extra large devices (large desktops)
+   No media query since the extra-large breakpoint has no upper bound on its width */
+    
+ /* Large (lg) devices (desktops, 992px and up) */
+ /* @media (min-width: 992px) { ... } */
+ 
+ /* Extra (xl) large devices (large desktops, 1200px and up) */
+ /* @media (min-width: 1200px) { ... } */
+
+/* hr.light {
+    border-top:1px solid #d5d5d5;
+    width:75%;
+    margin-top: 0.5rem;
+    margin-bottom:0.5rem;
+} */
+/* footer a {
+    color: #d5d5d5;
+} */
+/* hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width:100%;
+  
+    margin-bottom: 1rem;
+} */
+
+/*---Media Queries --*/
+
+/*---Firefox Bug Fix --*/
+
+
+/* 1rem => 16px */
+
+
+
+/* Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up) */
+/* @media (max-width: 576px) { 
+    .card {
+        width: 20rem;
+        
+    } 
+ } */
+
+/* Medium (md) devices (tablets, 768px and up) */
+/* @media (max-width: 768px) {
+    .card {
+        width: 20rem;
+       
+    } 
+} */
+
+/* Large (lg) devices (desktops, 992px and up) */
+/* @media (max-width: 992px) {
+    .card {
+        width: 25rem;
+    } 
+} */
+
+/* Extra (xl) large devices (large desktops, 1200px and up) */
+/* @media (max-width: 1200px) { 
+    .card {
+        width: 25rem;
+    } 
+ } */
+
